@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: daily-split
+    runtime: node
+    buildCommand: ""
+    startCommand: node server.js
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SPLIT_UPSTASH_REST_URL
+        sync: false
+      - key: SPLIT_UPSTASH_REST_TOKEN
+        sync: false
